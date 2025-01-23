@@ -4,7 +4,7 @@ import http from 'http';
 const app = express();
 
 app.get('/test', (req: Request, res: Response) => {
-  res.json({ status: true, message: 'alive!' });
+    res.send('ok');
 });
 
 const httpServer = http.createServer(app);
